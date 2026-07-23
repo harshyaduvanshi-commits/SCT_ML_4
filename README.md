@@ -23,7 +23,7 @@ near-infrared images captured by a Leap Motion sensor across 10 subjects
 6. Apply data augmentation (rotation, shift, zoom, brightness)
 7. Train with Early Stopping to prevent overfitting
 8. Evaluate using accuracy, a classification report, and a confusion matrix
-9. Run 5-fold stratified cross-validation to check result consistency
+9. Run 3-fold stratified cross-validation to check result consistency
 
 ## Dataset
 - Source: Kaggle "LeapGestRecog" (gti-upm/leapgestrecog)
@@ -34,12 +34,12 @@ near-infrared images captured by a Leap Motion sensor across 10 subjects
 - Accuracy
 - Classification Report (precision, recall, f1-score per gesture)
 - Confusion Matrix
-- 5-Fold Cross-Validation (mean accuracy and standard deviation)
+- 3-Fold Cross-Validation (mean accuracy and standard deviation)
 
 ## Results
 The model achieved approximately **99.9% test accuracy** using a random,
 stratified train/test split (update with your actual numbers, including
-the 5-fold cross-validation mean and standard deviation).
+the 3-fold cross-validation mean and standard deviation).
 
 ## Important Methodological Note
 This version uses a **random, stratified split** across all subjects.
@@ -77,6 +77,4 @@ static frame cannot capture motion.
 - Test generalization across more held-out subject combinations to check
   consistency
 
----
-*Built with the assistance of AI (Claude), with review, testing, and
-understanding of every step throughout.*
+
